@@ -15,31 +15,31 @@ export function ServicesSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Услуги
+            SOS-помощь
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Этим питомцам срочно нужна ветеринарная помощь</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "🆘 Найда",
+              description: "Сбита машиной, нужна срочная операция на лапе. Собрано 40 000 ₽ из 75 000 ₽",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "🆘 Рыжик",
+              description: "Котёнок с тяжёлой инфекцией, требуется стационар и капельницы. Нужно 28 000 ₽",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "🆘 Тиша",
+              description: "Пёс с переломом, ждёт операцию и реабилитацию. Собрано 15 000 ₽ из 60 000 ₽",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "🆘 Белка",
+              description: "Кошке нужна срочная стерилизация по показаниям и лечение. Нужно 18 000 ₽",
               direction: "bottom",
             },
           ].map((service, i) => (
@@ -87,7 +87,7 @@ function ServiceCard({
     >
       <div className="mb-3 flex items-center gap-3">
         <div className="h-px w-8 bg-foreground/30 transition-all duration-300 group-hover:w-12 group-hover:bg-foreground/50" />
-        <span className="font-mono text-xs text-foreground/60">0{index + 1}</span>
+        <span className="font-mono text-xs text-foreground/60">Срочно</span>
       </div>
       <h3 className="mb-2 font-sans text-2xl font-light text-foreground md:text-3xl">{service.title}</h3>
       <p className="max-w-sm text-sm leading-relaxed text-foreground/80 md:text-base">{service.description}</p>
